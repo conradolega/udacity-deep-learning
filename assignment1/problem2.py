@@ -53,3 +53,5 @@ def maybe_pickle(data_folders, min_num_images_per_class, force=False):
         print('Unable to save data to', set_filename, ':', e)
   
   return dataset_names
+
+train_datasets = maybe_pickle(['notMNIST_small/A'], 500)
